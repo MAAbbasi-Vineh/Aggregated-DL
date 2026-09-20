@@ -184,6 +184,7 @@ Chloroplast regulatory sequences from the same species, with and without canonic
 ## Embeddings and Saved Models
 
 Pre-trained model weights, training metadata, sequence mappings, and pre-computed CNN embeddings (FC3 feature vectors, 512-dimensional) for all three datasets are provided in `Final saved models.rar`.
+> **Note:** One of the saved model files exceeds GitHub's file size limit and therefore could not be uploaded to this repository. Please contact us by email to request the file.
 
 Embeddings can be loaded directly for downstream analyses — clustering, transfer learning, or similarity analysis — without re-running the full training pipeline:
 
@@ -192,6 +193,8 @@ import numpy as np
 
 embeddings = np.load('dataset1_embeddings.npy', allow_pickle=True).item()
 # Returns a dict: {sequence_id: numpy array (512-dimensional FC3 feature vector)}
+
+
 ```
 
 ---
@@ -286,7 +289,7 @@ If you use this code, data, or models in your research, please cite:
 
 The data augmentation method this framework extends is described in:
 
-> Abbasi-Vineh et al. (2025). *Scientific Reports*. DOI: [10.1038/s41598-025-12796-9](https://doi.org/10.1038/s41598-025-12796-9)
+> Abbasi-Vineh et al. (2026). *Scientific Reports*. DOI: 10.1038/s41598-026-69140-y
 
 ---
 
@@ -298,6 +301,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For technical questions or requests for additional data and analysis details, please contact the corresponding author via the associated publication.
+For technical questions, requests for additional data or analysis details, or information about the latest version of the framework, please contact the authors:
 
-> **Note:** Optimised versions of this framework informed by ongoing functional and experimental studies are under active development. If you plan to apply this framework to your own datasets, we encourage you to contact the authors to obtain information about the latest updates and recommended implementation practices.
+* **Dr. Mohammad Ali Abbasi-Vineh:** [maa.vineh@gmail.com](mailto:maa.vineh@gmail.com); [Ali.abbasi@mpimp-golm.mpg.de](mailto:Ali.abbasi@mpimp-golm.mpg.de)
+* **Dr. Naser Farrokhi:** [n_farrokhi@sbu.ac.ir](mailto:n_farrokhi@sbu.ac.ir)
+* **Dr. Pär K. Ingvarsson:** [par.ingvarsson@slu.se](mailto:par.ingvarsson@slu.se)
+
+> **Note:** Optimised versions of this framework, informed by ongoing functional and experimental studies, are under active development. If you plan to apply the framework to your own datasets, we encourage you to contact the authors for information about the latest updates and recommended implementation practices.
+
