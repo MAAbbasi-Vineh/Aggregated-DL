@@ -283,13 +283,10 @@ For original sequence-level classification, LSTM-Attention weights from all 240 
 
 If you use this code, data, or models in your research, please cite:
 
-```
-[Citation will be added upon publication]
-```
+> Abbasi-Vineh et al. (2026). *Scientific Reports*. **[Publication](https://www.nature.com/articles/s41598-026-69140-y)** · DOI: **[10.1038/s41598-026-69140-y](https://doi.org/10.1038/s41598-026-69140-y)**
 
-The data augmentation method this framework extends is described in:
+The data augmentation method extended by this framework is described in the publication above.
 
-> Abbasi-Vineh et al. (2026). *Scientific Reports*. DOI: 10.1038/s41598-026-69140-y
 
 ---
 
